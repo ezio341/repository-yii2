@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'alamat')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tanggal_lahir')->textInput(['type'=>'date', 'data-provider'=>'datepicker']) ?>
+    <?= $form->field($model, 'tanggal_lahir')->textInput(['data-provide'=>'datepicker', 'data-date-format'=>"yyyy/mm/dd"]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
